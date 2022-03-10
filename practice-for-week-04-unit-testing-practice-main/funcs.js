@@ -17,7 +17,19 @@ function isOdd(number) {
 }
 
 function myRange(min, max, step = 1) {
-  // Your code here
+  let returnArr = [];
+  if(step === 1){
+    for(let i = min; i <= max; i++){
+      returnArr.push(i);
+    }
+    return returnArr;
+  }
+  if(step !== 1){
+    for(let i = min; i <= max; i += step){
+      returnArr.push(i)
+    }
+    return returnArr;
+  }
 }
 
 
