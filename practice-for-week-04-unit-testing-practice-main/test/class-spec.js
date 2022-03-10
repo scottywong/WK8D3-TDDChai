@@ -22,19 +22,23 @@ describe("Word", function () {
 
   describe("removeVowels function", function () {
     it("should return a the word with all vowels removed", function () {
-      expect.fail("replace with your code");
+    let newWord = new Word('something');
+    expect(newWord.removeVowels()).to.equal('smthng');
+
     });
   });
 
   describe("removeConsonants function", function () {
     it("should return the word with the consonants removed", function () {
-      expect.fail("replace with your code");
+      let newWord = new Word('something');
+      expect(newWord.removeConsonants()).to.equal('oei');
     });
   });
   
   describe("pigLatin function", function () {
     it("should return the word converted to pig latin", function () {
-      expect.fail("replace with your code");
+      let newWord = new Word('trash');
+      expect(newWord.pigLatin()).to.equal('ashtray');
     });
   });
 });
