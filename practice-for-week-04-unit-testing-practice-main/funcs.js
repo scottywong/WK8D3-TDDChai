@@ -1,9 +1,19 @@
 function isFive(num) {
-  // Your code here
+  return num === 5 ? true : false;
 }
 
 function isOdd(number) {
-  // Your code here
+  if(typeof number !== "number"){
+    throw new Error('Please enter a number');
+  }
+  if(Math.abs(number) % 2 === 1){
+
+    return true;
+  } 
+  else {
+
+    return false;
+  }
 }
 
 function myRange(min, max, step = 1) {
